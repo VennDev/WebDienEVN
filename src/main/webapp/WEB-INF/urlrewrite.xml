@@ -1,0 +1,6 @@
+<urlrewrite>
+    <rule>
+        <from>/index</from>
+        <to type="redirect">%{context-path}/index.jsp</to>
+    </rule>
+</urlrewrite>

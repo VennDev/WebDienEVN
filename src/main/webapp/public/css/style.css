@@ -1,0 +1,188 @@
+@font-face {
+    font-family: 'VNI';
+    src: url('public/font/VNSTAMP.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'VNI';
+    font-size: 14px;
+    color: #050505;
+    background-color: white;
+}
+
+.menu {
+    width: 100%;
+    height: 50px;
+    background-color: #005ea5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.menu .logo {
+    width: 200px;
+    height: 50px;
+    float: left;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #e3e3e3;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+.menu .logo img {
+    padding-top: 7px;
+}
+.menu ul {
+    margin: 0;
+    padding: 0;
+    float: right;
+    line-height: 50px;
+}
+.menu ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 10px;
+    transition: all .5s ease;
+}
+.menu ul li a:hover {
+    color: #000;
+}
+.menu .menu-toggle {
+    display: none;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    float: right;
+    margin-top: 5px;
+}
+.menu .menu-toggle:before {
+    content: '\f0c9';
+    font-family: fontAwesome;
+}
+.menu .menu-toggle.active:before {
+    content: '\f00d';
+}
+.menu .menu-toggle.active ~ ul {
+    left: 0;
+}
+.form {
+    width: 500px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    margin: 50px auto;
+    text-align: center;
+    position: relative
+}
+.form img {
+    margin-right: 60%;
+}
+.form h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-left: 13px;
+    font-weight: bold;
+}
+.form input[type="text"],
+.form input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+}
+.form input[type="date"],
+.form input[type="datetime-local"]
+.form input[type="number"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+}
+.form input[type="text"]:hover,
+.form input[type="datetime-local"]:hover,
+.form input[type="date"]:hover,
+.form input[type="password"]:hover {
+    border-color: #a39b9b;
+}
+.form input[type="text"]:focus,
+.form input[type="datetime-local"]:hover,
+.form input[type="date"]:hover,
+.form input[type="password"]:focus {
+    border-color: #13b366;
+}
+.form input[type="submit"] {
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 1px solid #a39b9b;
+    border-radius: 5px;
+    background-color: rgb(42, 166, 65);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 65%;
+}
+.form input[type="submit"]:hover {
+    background-color: #13b366;
+}
+.form .error {
+    color: #ff0000;
+    font-size: 12px;
+}
+.form .title {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.form .footer {
+    font-size: 12px;
+    text-align: center;
+    background-color: #808080;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+dialog {
+    width: 500px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    margin: 50px auto;
+    text-align: center;
+    position: relative
+}
